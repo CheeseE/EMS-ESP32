@@ -44,6 +44,10 @@ jobs:
       - name: Build S3 firmware
         run: |
           platformio run -e ci_s3
+      
+      - name: Build C3 firmware
+        run: |
+          platformio run -e ci_c3
 
       - name: Create a GH Release
         id: 'automatic_releases'
